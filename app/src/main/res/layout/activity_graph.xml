@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GraphActivity">
+
+    <Toolbar
+        android:id="@+id/graphToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/solid_half_corners_rect"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_back"
+                android:layout_centerVertical="true"
+                android:onClick="goBack"
+                ></ImageView>
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/toolbarTitleStyle"
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/backButton"
+            ></TextView>
+        </RelativeLayout>
+
+
+    </Toolbar>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/graphToolbar"
+        >
+
+        <TextView
+            android:id="@+id/priceTextView"
+            style="@style/priceTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:id="@+id/grownTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        style="@style/growthTextStyle"
+        ></TextView>
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        ></com.jjoe64.graphview.GraphView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            >
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="@string/one_day"
+                android:elevation="@dimen/common_elevation"
+                android:layout_margin="@dimen/small_button_margin"
+                android:onClick="oneDayScale"
+                android:background="@drawable/rect_accent_light"
+                ></Button>
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="@string/one_week"
+                android:layout_margin="@dimen/small_button_margin"
+                android:background="@drawable/rect_accent_light"
+                android:elevation="@dimen/common_elevation"
+                android:onClick="oneWeekScale"
+                ></Button>
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="@string/one_month"
+                android:layout_margin="@dimen/small_button_margin"
+                android:background="@drawable/rect_accent_light"
+                android:elevation="@dimen/common_elevation"
+                android:onClick="oneMonthScale"
+                ></Button>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_margin="@dimen/small_button_margin"
+            android:id="@+id/predictButton"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:text="@string/predict"
+            android:elevation="@dimen/common_elevation"
+            android:background="@drawable/rect_primary_contrast"
+            ></Button>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

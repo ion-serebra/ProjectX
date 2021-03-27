@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ProjectX</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="predict">Рассчитать прогноз</string>
+    <string name="one_day">1Д</string>
+    <string name="one_week">1Н</string>
+    <string name="one_month">1М</string>
+    <string name="available_instruments">Доступные инструменты</string>
+
+
+</resources>

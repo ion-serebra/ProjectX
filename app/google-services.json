@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "963075496737",
+    "project_id": "projectx-backend-network",
+    "storage_bucket": "projectx-backend-network.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963075496737:android:b4b54f3b300af2cdcffc60",
+        "android_client_info": {
+          "package_name": "com.oshaev.projectx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963075496737-ocipntqcgn7tgsq6f6mbpiluhrqmma59.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYUWolXigQQcCDSPxu3078Oxc9etr2qSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963075496737-ocipntqcgn7tgsq6f6mbpiluhrqmma59.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
