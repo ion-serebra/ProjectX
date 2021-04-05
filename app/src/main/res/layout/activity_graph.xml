@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GraphActivity">
+    tools:context=".ui.GraphActivity">
 
     <Toolbar
         android:id="@+id/graphToolbar"
@@ -68,52 +68,29 @@
         android:layout_weight="5"
         ></com.jjoe64.graphview.GraphView>
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:text="Прогнозируемая величина на следующий день:"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="right"
-            >
+            style="@style/instrumentTitleTextStyle"
+            ></TextView>
 
-            <Button
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:text="@string/one_day"
-                android:elevation="@dimen/common_elevation"
-                android:layout_margin="@dimen/small_button_margin"
-                android:onClick="oneDayScale"
-                android:background="@drawable/rect_accent_light"
-                ></Button>
-            <Button
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:text="@string/one_week"
-                android:layout_margin="@dimen/small_button_margin"
-                android:background="@drawable/rect_accent_light"
-                android:elevation="@dimen/common_elevation"
-                android:onClick="oneWeekScale"
-                ></Button>
-            <Button
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:text="@string/one_month"
-                android:layout_margin="@dimen/small_button_margin"
-                android:background="@drawable/rect_accent_light"
-                android:elevation="@dimen/common_elevation"
-                android:onClick="oneMonthScale"
-                ></Button>
+        <TextView
+            android:id="@+id/predictValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/priceTextStyle"
+            ></TextView>
 
-        </LinearLayout>
+        <TextView
+            android:id="@+id/predictGrowthTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/growthTextStyle"
+            ></TextView>
 
-        <Button
-            android:layout_margin="@dimen/small_button_margin"
-            android:id="@+id/predictButton"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:text="@string/predict"
-            android:elevation="@dimen/common_elevation"
-            android:background="@drawable/rect_primary_contrast"
-            ></Button>
+
+
 
     </LinearLayout>
 

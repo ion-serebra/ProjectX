@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <Toolbar
         android:id="@+id/mainToolbar"
@@ -40,7 +40,10 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             style="@style/instrumentTitleTextStyle"
+            android:onClick="calculateTimeSeries"
             ></TextView>
+
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_margin="20dp"

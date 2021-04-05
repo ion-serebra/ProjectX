@@ -1,4 +1,4 @@
-package com.oshaev.projectx;
+package com.oshaev.projectx.calculations;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,7 +8,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.w3c.dom.Text;
+import com.oshaev.projectx.customobjects.Equity;
+import com.oshaev.projectx.R;
 
 import java.util.ArrayList;
 

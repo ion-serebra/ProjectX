@@ -1,4 +1,4 @@
-package com.oshaev.projectx;
+package com.oshaev.projectx.customobjects;
 
 import com.google.firebase.database.Exclude;
 
